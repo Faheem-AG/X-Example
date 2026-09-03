@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example - Future Technology Today | Shop Smart Devices & Innovations</title>
+  <meta name="description"
+    content="Your one-stop destination for the latest tech products and gadgets. Shop smartphones, laptops, audio, cameras and more with free shipping over $100.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-item"><i class="fa-solid fa-globe"></i> English</span>
+        <span class="top-bar-item"><i class="fa-solid fa-dollar-sign"></i> USD $</span>
+        <span class="top-bar-divider">|</span>
+        <span class="top-bar-item"><i class="fa-solid fa-truck-fast"></i> Free Shipping on All Orders Over $100</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="#" class="top-bar-link"><i class="fa-solid fa-location-dot"></i> Track Order</a>
+        <a href="#" class="top-bar-link"><i class="fa-solid fa-headset"></i> Support</a>
+        <a href="#" class="top-bar-link"><i class="fa-solid fa-store"></i> Store Locator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo" id="logo">
+        <div class="logo-icon">X</div>
+        <span>Example</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#" class="nav-link">Shop <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#" class="nav-link">Categories <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#" class="nav-link active">Deals</a>
+        <a href="#" class="nav-link">New Arrivals</a>
+        <a href="#" class="nav-link">Brands</a>
+        <a href="#" class="nav-link">Blog</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-bar" id="searchBar">
+          <input type="text" placeholder="Search for products..." id="searchInput">
+          <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="nav-icon-btn" id="accountBtn"><i class="fa-solid fa-user"></i></button>
+        <button class="nav-icon-btn" id="wishlistBtn"><i class="fa-solid fa-heart"></i></button>
+        <button class="nav-icon-btn cart-btn" id="cartBtn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero-section" id="heroSection">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active" id="heroSlide1">
+        <div class="hero-bg">
+          <div class="hero-glow hero-glow-1"></div>
+          <div class="hero-glow hero-glow-2"></div>
+          <div class="hero-grid-pattern"></div>
+        </div>
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="hero-badge">NEW LAUNCH</span>
+            <h1 class="hero-title">Future<br>Technology<br>Today.</h1>
+            <p class="hero-desc">Explore the latest smart devices<br>and innovations.</p>
+            <div class="hero-actions">
+              <a href="#" class="btn btn-primary hero-shop-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="btn btn-ghost hero-video-btn"><i class="fa-solid fa-circle-play"></i> Watch Video</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-product-showcase">
+              <div class="hero-phone">
+                <div class="phone-mockup">
+                  <div class="phone-screen"></div>
+                  <div class="phone-notch"></div>
+                </div>
+              </div>
+              <div class="hero-headphones">
+                <div class="headphone-mockup">
+                  <div class="hp-band"></div>
+                  <div class="hp-cup hp-cup-l"></div>
+                  <div class="hp-cup hp-cup-r"></div>
+                </div>
+              </div>
+              <div class="hero-watch">
+                <div class="watch-mockup">
+                  <div class="watch-face"></div>
+                  <div class="watch-band-top"></div>
+                  <div class="watch-band-bottom"></div>
+                </div>
+              </div>
+              <div class="hero-floating-dots"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container hero-bottom-bar">
+          <div class="hero-features">
+            <div class="hero-feature">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <strong>Free Delivery</strong>
+                <span>On orders over $100.</span>
+              </div>
+            </div>
+            <div class="hero-feature">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Secure Payment</strong>
+                <span>100% protected.</span>
+              </div>
+            </div>
+            <div class="hero-feature">
+              <i class="fa-solid fa-rotate-left"></i>
+              <div>
+                <strong>Easy Returns</strong>
+                <span>30 day return.</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-pagination">
+            <span class="hero-page-num active">01</span>
+            <div class="hero-progress-bar">
+              <div class="hero-progress-fill" id="heroProgressFill"></div>
+            </div>
+            <span class="hero-page-num">03</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="hero-arrow hero-arrow-left" id="heroPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="hero-arrow hero-arrow-right" id="heroNext"><i class="fa-solid fa-chevron-right"></i></button>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories-section" id="categoriesSection">
+    <div class="container">
+      <div class="categories-scroll">
+        <div class="category-item" id="catSmartphones">
+          <div class="category-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <span class="category-name">Smartphones</span>
+          <span class="category-count">15 Items</span>
+        </div>
+        <div class="category-item" id="catLaptops">
+          <div class="category-icon"><i class="fa-solid fa-laptop"></i></div>
+          <span class="category-name">Laptops</span>
+          <span class="category-count">14 Items</span>
+        </div>
+        <div class="category-item" id="catAudio">
+          <div class="category-icon"><i class="fa-solid fa-headphones"></i></div>
+          <span class="category-name">Audio</span>
+          <span class="category-count">22 Items</span>
+        </div>
+        <div class="category-item" id="catSmartwatches">
+          <div class="category-icon"><i class="fa-regular fa-clock"></i></div>
+          <span class="category-name">Smartwatches</span>
+          <span class="category-count">16 Items</span>
+        </div>
+        <div class="category-item" id="catCameras">
+          <div class="category-icon"><i class="fa-solid fa-camera"></i></div>
+          <span class="category-name">Cameras</span>
+          <span class="category-count">8 Items</span>
+        </div>
+        <div class="category-item" id="catGaming">
+          <div class="category-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <span class="category-name">Gaming</span>
+          <span class="category-count">12 Items</span>
+        </div>
+        <div class="category-item" id="catAccessories">
+          <div class="category-icon"><i class="fa-solid fa-plug"></i></div>
+          <span class="category-name">Accessories</span>
+          <span class="category-count">30 Items</span>
+        </div>
+        <div class="category-item" id="catTablets">
+          <div class="category-icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
+          <span class="category-name">Tablets</span>
+          <span class="category-count">10 Items</span>
+        </div>
+        <div class="category-view-all" id="catViewAll">
+          <i class="fa-solid fa-grid-2"></i>
+          <span>View All<br>Categories</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMO GRID ===== -->
+  <section class="promo-section" id="promoSection">
+    <div class="container">
+      <div class="promo-grid">
+        <!-- MacBook Card -->
+        <div class="promo-card promo-macbook" id="promoMacbook">
+          <div class="promo-card-content">
+            <span class="promo-label">LIMITED TIME OFFER</span>
+            <h2 class="promo-card-title">MacBook Air M2</h2>
+            <p class="promo-card-subtitle">Supercharged by M2.</p>
+            <p class="promo-card-price">From $1099.00</p>
+            <a href="#" class="btn btn-outline-dark promo-btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="promo-card-image promo-macbook-img">
+            <div class="laptop-mockup">
+              <div class="laptop-screen"></div>
+              <div class="laptop-base"></div>
+            </div>
+          </div>
+        </div>
+        <!-- 40% Off Card -->
+        <div class="promo-card promo-deal" id="promoDeal">
+          <div class="promo-card-content">
+            <span class="promo-label promo-label-light">MEGA DEAL</span>
+            <h2 class="promo-card-title promo-title-light">Grab Up to<br>40% Off</h2>
+            <p class="promo-card-subtitle promo-subtitle-light">On selected Items</p>
+            <a href="#" class="btn btn-white promo-btn">Shop Deals <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="promo-deal-shapes">
+            <div class="deal-circle deal-circle-1"></div>
+            <div class="deal-circle deal-circle-2"></div>
+            <div class="deal-product">
+              <div class="deal-earbuds">
+                <div class="earbud earbud-l"></div>
+                <div class="earbud earbud-r"></div>
+                <div class="earbud-case"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sound Card -->
+        <div class="promo-card promo-sound" id="promoSound">
+          <div class="promo-card-content">
+            <h3 class="promo-sm-title">Sound That<br>Moves You.</h3>
+            <p class="promo-sm-desc">Premium audio experience<br>for every moment.</p>
+            <a href="#" class="promo-sm-link">Shop Audio <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="promo-sm-image">
+            <div class="sm-headphone">
+              <div class="sm-hp-band"></div>
+              <div class="sm-hp-cup"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Camera Card -->
+        <div class="promo-card promo-camera" id="promoCamera">
+          <div class="promo-card-content">
+            <h3 class="promo-sm-title">Capture Every<br>Detail.</h3>
+            <p class="promo-sm-desc">Professional cameras for<br>professionals.</p>
+            <a href="#" class="promo-sm-link">Shop Cameras <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="promo-sm-image">
+            <div class="sm-camera">
+              <div class="cam-body"></div>
+              <div class="cam-lens"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED COLLECTIONS ===== -->
+  <section class="featured-section" id="featuredSection">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Collections</h2>
+        <a href="#" class="view-all-link">View All <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="collections-grid">
+        <div class="collection-card" id="collApple">
+          <div class="collection-img collection-apple">
+            <div class="collection-icon"><i class="fa-brands fa-apple"></i></div>
+          </div>
+          <div class="collection-info">
+            <h3>Apple Collection</h3>
+            <p>Premium devices</p>
+            <a href="#" class="collection-link">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="collection-card" id="collGaming">
+          <div class="collection-img collection-gaming">
+            <div class="collection-icon"><i class="fa-solid fa-gamepad"></i></div>
+          </div>
+          <div class="collection-info">
+            <h3>Gaming Zone</h3>
+            <p>Level Up Your Game</p>
+            <a href="#" class="collection-link">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="collection-card" id="collSmart">
+          <div class="collection-img collection-smart">
+            <div class="collection-icon"><i class="fa-solid fa-house-signal"></i></div>
+          </div>
+          <div class="collection-info">
+            <h3>Smart Living</h3>
+            <p>Innovate Your Home</p>
+            <a href="#" class="collection-link">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="collection-card" id="collWork">
+          <div class="collection-img collection-work">
+            <div class="collection-icon"><i class="fa-solid fa-briefcase"></i></div>
+          </div>
+          <div class="collection-info">
+            <h3>Work From Home</h3>
+            <p>Essentials for Productivity</p>
+            <a href="#" class="collection-link">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLASH DEALS ===== -->
+  <section class="flash-deals-section" id="flashDealsSection">
+    <div class="container">
+      <div class="section-header">
+        <div class="flash-header-left">
+          <h2 class="section-title">Flash Deals</h2>
+          <div class="countdown" id="countdown">
+            <div class="countdown-item"><span id="countHours">07</span></div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-item"><span id="countMinutes">45</span></div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-item"><span id="countSeconds">32</span></div>
+          </div>
+        </div>
+        <div class="flash-header-right">
+          <a href="#" class="view-all-link">View All Deals <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="slider-arrows">
+            <button class="slider-arrow" id="flashPrev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-arrow" id="flashNext"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="products-grid" id="flashDealsGrid">
+        <!-- Product 1 -->
+        <div class="product-card" id="flashProduct1">
+          <div class="product-badge">HOT</div>
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-phone">
+            <div class="pi-device pi-smartphone"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">iPhone 15 Pro Max 256GB</p>
+            <div class="product-pricing">
+              <span class="product-price">$999.00</span>
+              <span class="product-original">$1199.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-count">(243)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card" id="flashProduct2">
+          <div class="product-badge badge-sale">-15%</div>
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-laptop">
+            <div class="pi-device pi-laptop-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Dell XPS 15 Plus Laptop</p>
+            <div class="product-pricing">
+              <span class="product-price">$1599.00</span>
+              <span class="product-original">$1799.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <span class="rating-count">(141)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card" id="flashProduct3">
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-headphones">
+            <div class="pi-device pi-headphones-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Sony WH-1000XM5 Headphones</p>
+            <div class="product-pricing">
+              <span class="product-price">$279.00</span>
+              <span class="product-original">$298.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-count">(412)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card" id="flashProduct4">
+          <div class="product-badge badge-new">NEW</div>
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-watch">
+            <div class="pi-device pi-watch-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Samsung Galaxy Watch 6</p>
+            <div class="product-pricing">
+              <span class="product-price">$244.00</span>
+              <span class="product-original">$299.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <span class="rating-count">(89)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card" id="flashProduct5">
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-speaker">
+            <div class="pi-device pi-speaker-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Bose SoundLink Revolve+</p>
+            <div class="product-pricing">
+              <span class="product-price">$263.00</span>
+              <span class="product-original">$329.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-count">(176)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card" id="flashProduct6">
+          <div class="product-badge badge-sale">-20%</div>
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-camera">
+            <div class="pi-device pi-camera-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Canon EOS R50 Mirrorless Camera</p>
+            <div class="product-pricing">
+              <span class="product-price">$579.00</span>
+              <span class="product-original">$694.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-count">(204)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEW ARRIVALS ===== -->
+  <section class="new-arrivals-section" id="newArrivalsSection">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">New Arrivals</h2>
+      </div>
+      <div class="arrivals-grid">
+        <!-- Featured Arrival -->
+        <div class="arrival-featured" id="arrivalFeatured">
+          <div class="arrival-featured-bg">
+            <div class="af-glow"></div>
+            <div class="af-product">
+              <div class="airpod-case">
+                <div class="airpod-lid"></div>
+                <div class="airpod-body"></div>
+                <div class="airpod-led"></div>
+              </div>
+            </div>
+          </div>
+          <div class="arrival-featured-info">
+            <h3>AirPods Pro<br>(2nd Gen)</h3>
+            <p>Adaptive Audio, Noise Cancellation, Personalized Spatial Audio</p>
+            <a href="#" class="btn btn-primary btn-sm">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="arrival-featured-price">$249.00</span>
+          </div>
+        </div>
+        <!-- Arrival Cards -->
+        <div class="arrival-card" id="arrivalCard1">
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-tablet">
+            <div class="pi-device pi-tablet-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">iPad Air (5th Gen)</p>
+            <div class="product-pricing">
+              <span class="product-price">$599.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-count">(146)</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrival-card" id="arrivalCard2">
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-earbuds">
+            <div class="pi-device pi-earbuds-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Sony WF-C700N</p>
+            <div class="product-pricing">
+              <span class="product-price">$149.00</span>
+              <span class="product-original">$181.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <span class="rating-count">(220)</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrival-card" id="arrivalCard3">
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-drone">
+            <div class="pi-device pi-drone-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">DJI Mini 3 Drone</p>
+            <div class="product-pricing">
+              <span class="product-price">$449.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-count">(371)</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrival-card" id="arrivalCard4">
+          <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+          <div class="product-image pi-mouse">
+            <div class="pi-device pi-mouse-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Logitech MX Master 3S</p>
+            <div class="product-pricing">
+              <span class="product-price">$99.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-count">(510)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEST SELLERS ===== -->
+  <section class="best-sellers-section" id="bestSellersSection">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Best Sellers</h2>
+      </div>
+      <div class="best-sellers-grid">
+        <div class="bestseller-card" id="bs1">
+          <span class="bs-number">01</span>
+          <div class="product-image pi-phone">
+            <div class="pi-device pi-smartphone"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">iPhone 15 Pro Max 256GB</p>
+            <div class="product-pricing">
+              <span class="product-price">$999.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-count">(243)</span>
+            </div>
+          </div>
+        </div>
+        <div class="bestseller-card" id="bs2">
+          <span class="bs-number">02</span>
+          <div class="product-image pi-laptop2">
+            <div class="pi-device pi-laptop-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Apple MacBook Air M2</p>
+            <div class="product-pricing">
+              <span class="product-price">$1099.00</span>
+              <span class="product-original">$1299.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-count">(389)</span>
+            </div>
+          </div>
+        </div>
+        <div class="bestseller-card" id="bs3">
+          <span class="bs-number">03</span>
+          <div class="product-image pi-watch2">
+            <div class="pi-device pi-watch-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Samsung Galaxy Watch 6</p>
+            <div class="product-pricing">
+              <span class="product-price">$244.00</span>
+              <span class="product-original">$349.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <span class="rating-count">(89)</span>
+            </div>
+          </div>
+        </div>
+        <div class="bestseller-card" id="bs4">
+          <span class="bs-number">04</span>
+          <div class="product-image pi-headphones2">
+            <div class="pi-device pi-headphones-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Sony WH-1000XM5 Headphones</p>
+            <div class="product-pricing">
+              <span class="product-price">$279.00</span>
+              <span class="product-original">$298.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-count">(412)</span>
+            </div>
+          </div>
+        </div>
+        <div class="bestseller-card" id="bs5">
+          <span class="bs-number">05</span>
+          <div class="product-image pi-camera2">
+            <div class="pi-device pi-camera-device"></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Canon EOS R10</p>
+            <div class="product-pricing">
+              <span class="product-price">$879.00</span>
+              <span class="product-original">$979.00</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-count">(167)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BADGES ===== -->
+  <section class="trust-section" id="trustSection">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item" id="trustSecure">
+          <div class="trust-icon"><i class="fa-solid fa-lock"></i></div>
+          <div class="trust-text">
+            <strong>100% Secure Payment</strong>
+            <p>Your transactions are safe and encrypted.</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="trust-item" id="trustDelivery">
+          <div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="trust-text">
+            <strong>Fast & Free Delivery</strong>
+            <p>Free shipping on all orders.</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="trust-item" id="trustReturns">
+          <div class="trust-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <div class="trust-text">
+            <strong>30-Day Easy Returns</strong>
+            <p>Hassle-free returns and exchanges.</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="trust-item" id="trustSupport">
+          <div class="trust-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="trust-text">
+            <strong>24/7 Customer Support</strong>
+            <p>We're here to help anytime.</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="trust-item" id="trustWarranty">
+          <div class="trust-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="trust-text">
+            <strong>Official Warranty</strong>
+            <p>Genuine products with warranty.</p>
+            <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APP DOWNLOAD ===== -->
+  <section class="app-section" id="appSection">
+    <div class="container">
+      <div class="app-grid">
+        <div class="app-left">
+          <h2>Shop Smarter with Example App</h2>
+          <p class="app-desc">Exclusive app-only offers, faster checkout and real-time order tracking.</p>
+          <div class="app-store-btns">
+            <a href="#" class="store-btn" id="appStoreBtn">
+              <i class="fa-brands fa-apple"></i>
+              <div><small>Download on the</small><strong>App Store</strong></div>
+            </a>
+            <a href="#" class="store-btn" id="googlePlayBtn">
+              <i class="fa-brands fa-google-play"></i>
+              <div><small>Get it on</small><strong>Google Play</strong></div>
+            </a>
+          </div>
+        </div>
+        <div class="app-features">
+          <div class="app-feature-item">
+            <i class="fa-solid fa-tag"></i>
+            <span>Exclusive App Deals</span>
+          </div>
+          <div class="app-feature-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Faster & Secure Checkout</span>
+          </div>
+          <div class="app-feature-item">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span>Real-Time Order Tracking</span>
+          </div>
+          <div class="app-feature-item">
+            <i class="fa-solid fa-life-ring"></i>
+            <span>Easy Returns & Support</span>
+          </div>
+        </div>
+        <div class="app-phone-mockup">
+          <div class="app-phone">
+            <div class="app-phone-screen">
+              <div class="app-screen-header"></div>
+              <div class="app-screen-card"></div>
+              <div class="app-screen-card"></div>
+              <div class="app-screen-nav"></div>
+            </div>
+          </div>
+          <div class="app-qr">
+            <div class="qr-placeholder">
+              <i class="fa-solid fa-qrcode"></i>
+            </div>
+            <span>Scan to Download<br>the App</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS + NEWSLETTER ===== -->
+  <section class="social-section" id="socialSection">
+    <div class="container">
+      <div class="social-grid">
+        <!-- Testimonials -->
+        <div class="testimonials-card" id="testimonialsCard">
+          <h3>What Our Customers Say</h3>
+          <div class="testimonial">
+            <div class="testimonial-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p>Example has the best collection of gadgets, fast delivery, great prices and amazing customer support!</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong>Robert Fox</strong>
+                <span>Verified Buyer</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="newsletter-card" id="newsletterCard">
+          <h3>Join Example Club</h3>
+          <p>Be the first to know about new arrivals and discounts straight to your inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" id="newsletterEmail">
+            <button class="btn btn-primary" id="subscribeBtn">Subscribe</button>
+          </div>
+        </div>
+        <!-- Stats -->
+        <div class="stats-card" id="statsCard">
+          <div class="stat-item">
+            <span class="stat-number" data-target="10">10K+</span>
+            <span class="stat-label">Products</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Top Brands</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99%</span>
+            <span class="stat-label">Satisfaction Rate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="#" class="logo footer-logo">
+            <div class="logo-icon">X</div>
+            <span>Example</span>
+          </a>
+          <p>Your one-stop destination for the latest tech products and gadgets. Explore our vast collection.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon" id="socialFb"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" id="socialTw"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon" id="socialIg"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" id="socialYt"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Deals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Shipping Info</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>We Accept</h4>
+          <div class="payment-icons">
+            <span class="payment-badge">VISA</span>
+            <span class="payment-badge payment-mc"><i class="fa-brands fa-cc-mastercard"></i></span>
+            <span class="payment-badge">PayPal</span>
+            <span class="payment-badge"><i class="fa-brands fa-apple-pay"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Example. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
